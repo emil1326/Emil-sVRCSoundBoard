@@ -1,0 +1,32 @@
+Thanks for choosing Emil's Soundboard System v0.11
+
+to install:
+
+1. Put the Provided prefab (inside the main folder) inside the root of the avatar (in the hiearchy).
+
+2. Insert your audioclips and images in the "Audio Clip List" and "Place Holder Image" fields.
+
+3. Click on the build button
+
+4. Click on the Finish set-up button
+
+5. Merge the "Emil'sSoundboardFX" to your current FX, using AV3 Manager is recomended (get from vcc). 
+   You can alternatively just override the current fx layer of your avatar but this will remove any other animations that is comming from this animator (not recommended)
+
+6. Fill in the constraints for both the root of the prefab as well as the on/off contact, you should put the head for the root constraint and your wrist for the on off constaint.
+
+7. Enjoy! if any bugs happend plase contact me through discord ==> emil1326_7742
+
+!! variables under Advanced settings can break a lot of things, modify at your risks
+
+!! this package cannot be transfered to quest as that it audiosources are not allowed for quest
+
+you are encouraged to open the Exemple scene to see a proper set-up if you arent sure of how to set it up.
+
+the physbone root should be placed sligthly above the chest and should be going down a bit for better comfort.
+
+follow GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+
+v0.11
+
+Ikonik figma for icons

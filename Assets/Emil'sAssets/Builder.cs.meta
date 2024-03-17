@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 37b7ca72ea48f944d95c2c8a498df74a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - EmilSoundboardAnimatorFX: {instanceID: 0}
+  - AC: {instanceID: 0}
+  - MatPageClip: {instanceID: 0}
+  - AudioClip: {instanceID: 0}
+  - MainShader: {instanceID: 0}
+  - AudioclipEmplacement: {instanceID: 0}
+  - MasterMaterial: {instanceID: 0}
+  - Pannel: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

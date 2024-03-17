@@ -1,0 +1,53 @@
+{
+  "dependencies": {
+    "com.vrchat.core.vpm-resolver": {
+      "version": "0.1.27"
+    },
+    "com.vrchat.avatars": {
+      "version": "3.5.0"
+    },
+    "lyuma.av3emulator": {
+      "version": "3.3.0"
+    },
+    "vrchat.blackstartx.gesture-manager": {
+      "version": "3.8.8"
+    },
+    "dev.vrlabs.av3manager": {
+      "version": "2.0.27"
+    }
+  },
+  "locked": {
+    "com.vrchat.core.vpm-resolver": {
+      "version": "0.1.27",
+      "dependencies": {}
+    },
+    "com.vrchat.avatars": {
+      "version": "3.5.0",
+      "dependencies": {
+        "com.vrchat.base": "3.5.0"
+      }
+    },
+    "com.vrchat.base": {
+      "version": "3.5.0",
+      "dependencies": {}
+    },
+    "lyuma.av3emulator": {
+      "version": "3.3.0",
+      "dependencies": {
+        "com.vrchat.avatars": ">=3.1.0 <3.6.0"
+      }
+    },
+    "vrchat.blackstartx.gesture-manager": {
+      "version": "3.8.8",
+      "dependencies": {
+        "com.vrchat.avatars": "3.2.x || 3.3.x || 3.4.x || 3.5.x"
+      }
+    },
+    "dev.vrlabs.av3manager": {
+      "version": "2.0.27",
+      "dependencies": {
+        "com.vrchat.avatars": ">=3.2.0 < 3.6.0"
+      }
+    }
+  }
+}
