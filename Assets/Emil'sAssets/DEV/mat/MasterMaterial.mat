@@ -8,17 +8,27 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MasterMaterial
-  m_Shader: {fileID: 4800000, guid: 25358f9c1c9663f4b8692bc2ee4e4ea1, type: 3}
+  m_Shader: {fileID: 4800000, guid: fc2c2d7b9ec11d34785997ccbb86f496, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - BSSBLOOMFOGTYPE_HEIGHT
+  - DISTORT
+  - GEOM_TYPE_BRANCH
+  - GEOM_TYPE_BRANCH_DETAIL
+  - GEOM_TYPE_FROND
+  - VIGNETTE_MASKED
+  - _LIGHTINGMODE_FLAT
+  - _RIM2STYLE_POIYOMI
+  - _RIMSTYLE_POIYOMI
+  - _STOCHASTICMODE_DELIOT_HEITZ
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2460
   stringTagMap:
-    AllLockedGUIDS: 5305e8ed8487aab45af65b47bf3a4a73,33ecebc08ee3c9b4fbd54c49e8097e17,33ecebc08ee3c9b4fbd54c49e8097e17
+    AllLockedGUIDS: 5305e8ed8487aab45af65b47bf3a4a73
     OriginalShader: .poiyomi/Poiyomi Toon Two Pass
     OriginalShaderGUID: fc2c2d7b9ec11d34785997ccbb86f496
     RenderType: Opaque
@@ -138,7 +148,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DecalTexture2:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 6a8756d4f39b9574abdac9267f9ebe87, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DecalTexture3:
@@ -970,7 +980,7 @@ Material:
     - _Decal2ChannelSeparationPremultiply: 0
     - _Decal2ChannelSeparationVertical: 0
     - _Decal2Depth: 0
-    - _Decal2FaceMask: 0
+    - _Decal2FaceMask: 2
     - _Decal2GlobalMask: 0
     - _Decal2GlobalMaskBlendType: 2
     - _Decal2HueAngleStrength: 0
@@ -1011,7 +1021,7 @@ Material:
     - _DecalEmissionStrength3: 0
     - _DecalEnabled: 1
     - _DecalEnabled1: 1
-    - _DecalEnabled2: 0
+    - _DecalEnabled2: 1
     - _DecalEnabled3: 0
     - _DecalHueShift: 0
     - _DecalHueShift1: 0
@@ -2397,7 +2407,7 @@ Material:
     - _Set_RimLightMaskChannel: 1
     - _Set_RimLightMaskUV: 0
     - _ShadeColor_Step: 0
-    - _ShaderOptimizerEnabled: 1
+    - _ShaderOptimizerEnabled: 0
     - _ShaderUIWarning0: -0
     - _ShaderUIWarning1: -0
     - _ShadingEnabled: 1
@@ -2787,7 +2797,7 @@ Material:
     - m_end_voronoi: 0
     - m_end_voronoiRandom: 0
     - m_lightingCategory: 0
-    - m_mainCategory: 0
+    - m_mainCategory: 1
     - m_modifierCategory: 0
     - m_renderingCategory: 0
     - m_specialFXCategory: 0
@@ -2807,7 +2817,7 @@ Material:
     - m_start_Decal0AudioLink: 0
     - m_start_Decal1: 0
     - m_start_Decal1AudioLink: 0
-    - m_start_Decal2: 0
+    - m_start_Decal2: 1
     - m_start_Decal2AudioLink: 0
     - m_start_Decal3: 0
     - m_start_Decal3AudioLink: 0

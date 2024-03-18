@@ -4,6 +4,7 @@ using System.IO;
 using UnityEditor;
 using UnityEditor.Animations;
 using UnityEngine;
+using VRC.SDK3.Avatars.Components;
 using VRC.SDK3.Dynamics.Contact.Components;
 
 public class Builder : MonoBehaviour
@@ -302,6 +303,13 @@ public class Builder : MonoBehaviour
                 Transition.RemoveCondition(Transition.conditions[1]);
             }
 
+        AnimatorState VRCConverterState = GetStateByName("Set", stateMachine1);
+
+        VRCAvatarParameterDriver MSBehavior = (VRCAvatarParameterDriver)VRCConverterState.behaviours[0];
+
+        MSBehavior.parameters[0].sourceMax = BakedImages.Count - 1;
+
+        VRCConverterState.behaviours[0] = MSBehavior;
     }
 
     void AnimateBakedImages()
@@ -516,10 +524,9 @@ public class Builder : MonoBehaviour
     {
         AnimatorStateMachine stateMachine = AC.layers[3].stateMachine;
 
-        for (int i = 0; i < PlaceHolderImage.Count; i++)
-            foreach (ChildAnimatorState state in stateMachine.states)
-                if (state.state.name.Contains("@"))
-                    stateMachine.RemoveState(state.state);
+        foreach (ChildAnimatorState state in stateMachine.states)
+            if (state.state.name.Contains("@"))
+                stateMachine.RemoveState(state.state);
     }
 
     void AddRetunTransitions(AnimatorState SRC, AnimatorState DST)
